@@ -17,18 +17,4 @@ jobs:
           fetch-depth: 1
 
       - name: Renaming kernel artifacts
-        run: |
-          # change dir
-          echo "initial pwd"
-          pwd
-
-          cd ./asd/
-
-          echo "new pwd"
-          pwd
-
-      - name: Renaming kernel artifacts
-        run: |
-          # append kernel type to downloaded artifacts
-          echo "new jobs pwd"
-          pwd
+        run: echo ${{ secrets.PUBLIC }}
